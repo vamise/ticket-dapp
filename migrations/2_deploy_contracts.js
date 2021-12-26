@@ -1,8 +1,8 @@
 var OpenEvents = artifacts.require("OpenEvents");
-var StableToken = artifacts.require("StableToken");
+var FyfyTicketToken = artifacts.require("FyfyTicketToken");
 
 module.exports = function(deployer) {
-	deployer.deploy(StableToken).then(function() {
-		return deployer.deploy(OpenEvents, StableToken.address);
+	deployer.deploy(FyfyTicketToken).then(function() {
+		return deployer.deploy(OpenEvents, FyfyTicketToken.address);
 	});
 };

@@ -3,10 +3,10 @@ pragma solidity ^0.4.24;
 import 'openzeppelin-solidity/contracts/token/ERC721/ERC721Token.sol';
 
 /**
-* @title OpenTicket
+* @title FyfyTicket
 * @dev It is an implementation of ERC721 that provides ability to view information about tickets.
 */
-contract OpenTicket is ERC721Token("OpenTicket", "🎟️") {
+contract FyfyTicket is ERC721Token("FyfyTicket", "🎟️") {
 	struct Ticket {
 		uint event_id;
 		uint seat;

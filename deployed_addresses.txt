@@ -1,2 +1,2 @@
-0x93121c7d93ed089f7358e5e79a9d2ab3c1d3c426 - OpenEvents, main contract.
-0x944baf78cd02d5ac90edba7a2d43268e8daa7027 - StableToken, ERC20 token for use with main contract.
+0xC5b9bC7425F22e0a8eC164cc3B948141C4F7F121 - OpenEvents, main contract.
+0x4339d1edbc0cf5708977129ade61dc435aaaf940 - FyfyToken, ERC20 token for use with main contract.

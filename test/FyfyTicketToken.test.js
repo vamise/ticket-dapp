@@ -1,14 +1,14 @@
-const StableToken = artifacts.require("StableToken");
+const FyfyTicketToken = artifacts.require("FyfyTicketToken");
 
-contract('StableToken', function(accounts) {
+contract('FyfyTicketToken', function(accounts) {
 	it('User should has 0 balance at beginning', async () => {
-		let instance = await StableToken.deployed();
+		let instance = await FyfyTicketToken.deployed();
 		let balance = await instance.balanceOf(accounts[0]);
 		assert.equal(balance.toNumber(), 0, 'Balance greater then 0');
 	});
 
 	it('Should mint tokens', async () => {
-		let instance = await StableToken.deployed();
+		let instance = await FyfyTicketToken.deployed();
 		await instance.mint({from: accounts[0]});
 		let balance = await instance.balanceOf(accounts[0]);
 		let zero_balance = await instance.balanceOf(accounts[1]);
@@ -18,7 +18,7 @@ contract('StableToken', function(accounts) {
 	});
 
 	it('Should transfer tokens', async () => {
-		let instance = await StableToken.deployed();
+		let instance = await FyfyTicketToken.deployed();
 		await instance.transfer(accounts[1], 100000000000000000000, {from: accounts[0]});
 
 		let balance_old = await instance.balanceOf(accounts[0]);
@@ -29,7 +29,7 @@ contract('StableToken', function(accounts) {
 	});
 
 	it('Should not transfer tokens', async () => {
-		let instance = await StableToken.deployed();
+		let instance = await FyfyTicketToken.deployed();
 
 		let err = null;
 
@@ -43,7 +43,7 @@ contract('StableToken', function(accounts) {
 	});
 
 	it('Should approve and transfer tokens', async () => {
-		let instance = await StableToken.deployed();
+		let instance = await FyfyTicketToken.deployed();
 
 		await instance.approve(accounts[2], 1, {from: accounts[1]});
 		await instance.transferFrom(accounts[1], accounts[3], 1, {from: accounts[2]});

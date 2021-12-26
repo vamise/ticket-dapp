@@ -1,9 +1,9 @@
 # 🎫 Ticket DApp
 
-Demo running on the Rinkeby network: [OpenTicket DApp]
+Demo running on the Rinkeby network: [FyfyTicket DApp]
 
 ## What is it?
-OpenTicket it is a dApp based on Ethereum Blockchain that provides an ability to create events and sell tickets for events as ERC721 tokens.
+FyfyTicket it is a dApp based on Ethereum Blockchain that provides an ability to create events and sell tickets for events as ERC721 tokens.
 
 ## Use Cases
 

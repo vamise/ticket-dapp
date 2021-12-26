@@ -1,6 +1,6 @@
 pragma solidity ^0.4.24;
 
-import './OpenTicket.sol';
+import './FyfyTicket.sol';
 import 'openzeppelin-solidity/contracts/token/ERC20/ERC20.sol';
 import 'openzeppelin-solidity/contracts/lifecycle/Pausable.sol';
 import 'openzeppelin-solidity/contracts/lifecycle/Destructible.sol';
@@ -10,7 +10,7 @@ import 'openzeppelin-solidity/contracts/math/SafeMath.sol';
 * @title OpenEvents
 * @dev It is a main contract that provides ability to create events, view information about events and buy tickets.
 */
-contract OpenEvents is OpenTicket, Pausable, Destructible {
+contract OpenEvents is FyfyTicket, Pausable, Destructible {
 	using SafeMath for uint;
 
 	address tokenAddress;

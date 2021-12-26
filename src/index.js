@@ -4,10 +4,10 @@ import { DrizzleProvider } from "drizzle-react";
 import App from './components/App';
 
 import OpenEvents from '../build/contracts/OpenEvents.json';
-import StableToken from '../build/contracts/StableToken.json';
+import FyfyTicketToken from '../build/contracts/FyfyTicketToken.json';
 
 const options = {
-	contracts: [OpenEvents, StableToken],
+	contracts: [OpenEvents, FyfyTicketToken],
 	events: {
 		OpenEvents: ['CreatedEvent']
 	}

@@ -152,7 +152,7 @@ class Form extends Component {
 					</div>
 					<div className="custom-control custom-radio custom-control-inline">
 						<input type="radio" id="payment2" name="payment" className="custom-control-input" value="usd" onChange={this.handleCurrency} />
-						<label className="custom-control-label" htmlFor="payment2">USD (Stable Token)</label>
+						<label className="custom-control-label" htmlFor="payment2">USD (Fyfy Token)</label>
 					</div>
 				</div>
 				<div className="form-group row">

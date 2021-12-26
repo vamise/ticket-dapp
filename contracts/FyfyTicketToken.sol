@@ -3,12 +3,12 @@ pragma solidity ^0.4.24;
 import 'openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol';
 
 /**
-* @title StableToken
+* @title FyfyTicketToken
 * @dev It is a basic ERC20 Token with unlimited mint() function.
 */
-contract StableToken is StandardToken {
-    string public constant name = "Stable Token USD";
-    string public constant symbol = "STUSD";
+contract FyfyTicketToken is StandardToken {
+    string public constant name = "Fyfy Ticket Token";
+    string public constant symbol = "FTT";
     uint8 public constant decimals = 18;
 
 	event Mint(address indexed to, uint256 amount);

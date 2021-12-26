@@ -20,7 +20,7 @@ p.emoji {
 }
 
 #sidebar-wrapper.my-sidebar {
-	background-color: #607D8B;
+	background-color: #006b9e;
 	color: #FAFAFA;
 	padding: 20px;
 }
@@ -67,8 +67,8 @@ p.emoji {
 }
 
 .event-title {
-    white-space: nowrap; /* Отменяем перенос текста */
-    overflow: hidden; /* Обрезаем содержимое */
+    white-space: nowrap; /* Cancel text wrapping */
+    overflow: hidden; /* Cropping the content */
     text-overflow: ellipsis;
 }
 

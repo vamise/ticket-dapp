@@ -8,18 +8,18 @@ class Token extends Component {
 	constructor(props, context) {
 		super(props);
 		this.contracts = context.drizzle.contracts;
-		this.balance = this.contracts['StableToken'].methods.balanceOf.cacheCall(this.props.accounts[0]);
+		this.balance = this.contracts['FyfyTicketToken'].methods.balanceOf.cacheCall(this.props.accounts[0]);
 	}
 
 	mintToken = () => {
-		this.contracts['StableToken'].methods.mint.cacheSend();
+		this.contracts['FyfyTicketToken'].methods.mint.cacheSend();
 	}
 
 	render() {
 		let body = <Loading />;
 
-		if (typeof this.props.contracts['StableToken'].balanceOf[this.balance] !== 'undefined') {
-			let balance = this.context.drizzle.web3.utils.fromWei(this.props.contracts['StableToken'].balanceOf[this.balance].value);
+		if (typeof this.props.contracts['FyfyTicketToken'].balanceOf[this.balance] !== 'undefined') {
+			let balance = this.context.drizzle.web3.utils.fromWei(this.props.contracts['FyfyTicketToken'].balanceOf[this.balance].value);
 			body =
 				<div className="text-center mt-5">
 					<h4>Your balance is: ${balance}</h4>

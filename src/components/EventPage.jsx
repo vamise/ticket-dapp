@@ -86,7 +86,7 @@ class EventPage extends Component {
 
 	buyTicket = () => {
 		if (this.props.contracts['OpenEvents'].getEvent[this.event].value[3]) {
-			let tx = this.contracts['StableToken'].methods.approve.cacheSend(this.contracts['OpenEvents'].address, this.props.contracts['OpenEvents'].getEvent[this.event].value[2]);
+			let tx = this.contracts['FyfyTicketToken'].methods.approve.cacheSend(this.contracts['OpenEvents'].address, this.props.contracts['OpenEvents'].getEvent[this.event].value[2]);
 			this.setState({
 				approve_tx: tx,
 				waiting_approve: true

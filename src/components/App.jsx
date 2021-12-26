@@ -99,7 +99,7 @@ class App extends Component {
 					<div id="page-content-wrapper">
 						<div className="container-fluid">
 							<h1 className="text-center logo">
-								<Link to="/"><span role="img" aria-label="ticket">🎫</span> OpenTicket DApp</Link>
+								<Link to="/"><span role="img" aria-label="ticket">🎫</span> Fyfy Ticket DApp</Link>
 							</h1>
 							<div className="mt-4">
 								{body}
