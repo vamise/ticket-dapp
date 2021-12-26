@@ -36,7 +36,7 @@ contract OpenEvents is FyfyTicket, Pausable, Destructible {
 	event SoldTicket(address indexed buyer, uint indexed eventId, uint ticketId);
 
 	/**
-	* @dev Constructor sets the USD Token address that will be used for buying tickets.
+	* @dev Constructor sets the Fyfy Token address that will be used for buying tickets.
 	* @param _token address - The address of the token contract.
 	*/
 	constructor(address _token) public {
@@ -62,7 +62,7 @@ contract OpenEvents is FyfyTicket, Pausable, Destructible {
     }
 
 	/**
-	* @dev Function changes the USD Token address.
+	* @dev Function changes the Fyfy Token address.
 	* @param _token address - The address of the token contract.
 	* @notice Requires that the msg.sender is contract owner.
 	*/
