@@ -23,14 +23,14 @@ class Token extends Component {
 			body =
 				<div className="text-center mt-5">
 					<h4>Your balance is: ${balance}</h4>
-					<button className="btn btn-dark mt-5" onClick={this.mintToken}><i className="far fa-money-bill-alt"></i> Get Free 100 USD Tokens</button>
+					<button className="btn btn-dark mt-5" onClick={this.mintToken}><i className="far fa-money-bill-alt"></i> Get Free 100 Fyfy Tokens</button>
 				</div>
 			;
 		}
 
 		return (
 			<div>
-				<h2>USD Tokens</h2>
+				<h2>Fyfy Tokens</h2>
 				<hr />
 				{body}
 			</div>

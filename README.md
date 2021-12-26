@@ -8,10 +8,10 @@ FyfyTicket it is a dApp based on Ethereum Blockchain that provides an ability to
 ## Use Cases
 
 ### Event creator.
-A user can create an event: set up a title, description, image, date, price (The price can be set in Ethereum or in USD tokens), availability of seats (limited seats or not, if limited - the number of seats). When the event is created it is showed in the list of events. Other users can buy tickets for this event. All funds from the ticket's sale go to the event creator directly.
+A user can create an event: set up a title, description, image, date, price (The price can be set in Ethereum or in Fyfy tokens), availability of seats (limited seats or not, if limited - the number of seats). When the event is created it is showed in the list of events. Other users can buy tickets for this event. All funds from the ticket's sale go to the event creator directly.
 
 ### Ticket buyer
-A user can see the list of events and can choose and buy a ticket for it. The user can pay by Ethereum or USD tokens depends on event's settings. The user can see the list of all its tickets. The user can send its ticket to another user. All tickets are ERC721 tokens that means that users can do any action available for these type of tokens.
+A user can see the list of events and can choose and buy a ticket for it. The user can pay by Ethereum or Fyfy tokens depends on event's settings. The user can see the list of all its tickets. The user can send its ticket to another user. All tickets are ERC721 tokens that means that users can do any action available for these type of tokens.
 
 ## USD Token
 DApp uses test tokens which user can receive on a special page.
